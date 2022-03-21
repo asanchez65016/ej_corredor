@@ -1,0 +1,34 @@
+<html>
+<head>
+    <script src="js/corredor.js"></script>
+</head>
+<body>
+<table border="3">
+
+<form action="" method="GET">
+<tr>
+<td colspan="2">Formulario</td>
+</tr>
+<tr>
+<td>Introduce nombre:</td>
+
+<td><input type="text" placeholder="Introduce tu nombre" id="nombre" onblur="validar_nom()"></td>
+</tr>
+<tr>
+<td>Introduce email:</td>
+<td><input type="email" placeholder="Introduce tu email" id="email" onblur="ValidateEmail(this.value)"></td>
+</tr>
+<tr>
+<td>¿Has corrido antes?</td>
+<td><input class="opcion" type="radio" value="si" name="exp" id="si" onclick="SiCorre()">si
+    <input class="opcion" type="radio" value="no" name="exp" id="no" onclick="noHaCorrido()" checked>no
+    <div id="corredor"></div>
+</td>    
+</tr>
+<tr>
+<td colspan="2"><input type="button" value="Enviar" id="boton" onclick="visualizar()"></td>
+</tr>
+</form>
+</table>
+</body>
+</html>
